@@ -182,3 +182,9 @@ const layout = [
   '',
   '',
 ]
+
+for (let i = 0; i < squares.length; i++) {
+  let letter = layout[i]
+  squares[i].innerHTML = letter
+  if (letter !== '') squares[i].classList.add('tile')
+}
